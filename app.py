@@ -1,5 +1,10 @@
 import streamlit as st
 import pandas as pd
+import sys  
+
+# Debug info
+st.write("Python version:", sys.version)
+st.write("Pandas version:", pd.__version__)
 
 # Konfigurasi
 REQUIRED_COLUMNS = ['Timestamp', 'Status', 'Amount (INR)', 'Sender UPI ID']
